@@ -1,0 +1,23 @@
+.filter {
+  background-color: var(--foxtrot);
+  padding: 10rem;
+  margin-top: 30rem;
+
+  &__links {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  @include respond-to(small) {
+    &__links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}

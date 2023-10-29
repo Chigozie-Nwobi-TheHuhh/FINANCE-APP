@@ -1,0 +1,55 @@
+.mobile {
+  background-color: var(--foxtrot);
+  padding: 12rem;
+
+  &__info {
+    padding: 10rem;
+    align-content: center;
+
+    h1 {
+      font-size: 25rem;
+      text-align: center;
+      margin-bottom: 20rem;
+    }
+  }
+
+  &__pcon {
+    padding: 5rem;
+
+    p {
+      font-size: 11rem;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__imgg {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include respond-to(small) {
+    h1 {
+      margin-top: 50rem;
+    }
+
+    &__pcon {
+      display: flex;
+      justify-content: center;
+      padding: 5rem;
+
+      p {
+        width: 350rem;
+      }
+    }
+
+    &__imgcon {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

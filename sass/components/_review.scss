@@ -1,0 +1,196 @@
+.review {
+  background-color: var(--echo);
+  padding: 10rem;
+
+  &__card {
+    padding: 10rem;
+    width: 100%;
+  }
+
+  &__details {
+    margin-top: 15rem;
+  }
+
+  h1 {
+    font-size: 23rem;
+    text-align: center;
+  }
+
+  &__word {
+    color: var(--charlie);
+    font-size: 12rem;
+    text-align: center;
+    margin-top: 18rem;
+    margin-bottom: 40rem;
+  }
+
+  &__az {
+    border: 2px solid var(--golf);
+    background-color: var(--echo);
+    padding: 10rem;
+    box-shadow: 3px 3px var(--golf);
+    margin-bottom: 15rem;
+
+    h2 {
+      color: var(--bravo);
+      margin-bottom: 5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .review__first {
+      font-size: 11rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .review__text {
+      font-size: 11rem;
+      text-align: center;
+    }
+
+    img {
+      margin-top: 10rem;
+    }
+  }
+
+  &__tx {
+    border: 2px solid var(--golf);
+    background-color: var(--foxtrot);
+    padding: 10rem;
+    box-shadow: 3px 3px var(--golf);
+    margin-bottom: 15rem;
+
+    h3 {
+      font-weight: bold;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    .review__second {
+      font-size: 11rem;
+      text-align: center;
+      margin-bottom: 5rem;
+      color: var(--echo);
+    }
+
+    .review__texts {
+      font-size: 11rem;
+      text-align: center;
+      color: var(--echo);
+    }
+
+    img {
+      margin-top: 10rem;
+    }
+  }
+
+  &__au {
+    border: 2px solid var(--golf);
+    background-color: var(--echo);
+    padding: 10rem;
+    box-shadow: 3px 3px var(--golf);
+    margin-bottom: 15rem;
+
+    h2 {
+      color: var(--bravo);
+      margin-bottom: 5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .review__third {
+      font-size: 11rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .review__texting {
+      font-size: 11rem;
+      text-align: center;
+    }
+
+    img {
+      margin-top: 10rem;
+    }
+  }
+
+  @include respond-to(small) {
+    &__card {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__az {
+      margin-right: 20rem;
+      padding: 15rem;
+      border-radius: 9rem;
+
+      h2 {
+        text-align: left;
+      }
+
+      .review__first {
+        text-align: left;
+      }
+
+      .review__text {
+        text-align: left;
+        width: 365rem;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+      }
+    }
+
+    &__tx {
+      margin-right: 20rem;
+      padding: 15rem;
+      border-radius: 9rem;
+
+      h3 {
+        text-align: left;
+      }
+
+      .review__second {
+        text-align: left;
+      }
+
+      .review__texts {
+        text-align: left;
+        width: 395rem;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-top: 10rem;
+      }
+    }
+
+    &__au {
+      padding: 15rem;
+      border-radius: 9rem;
+
+      h2 {
+        text-align: left;
+      }
+
+      .review__third {
+        text-align: left;
+      }
+
+      .review__texting {
+        text-align: left;
+        width: 320.8rem;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+      }
+    }
+  }
+}
